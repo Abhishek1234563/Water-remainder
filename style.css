@@ -134,48 +134,93 @@
     text-shadow: 0 0 10px #00ff88, 0 0 20px #00ff88;
   }
 
-  @media (max-width: 768px) {
+ @media (max-width: 768px) {
     body {
-      padding: 10px; 
+        padding: 0 15px;  /* Provide more padding on smaller screens */
     }
-  
-    .box {
-      max-width: 95%; 
-      padding: 20px; 
+
+    .neon-container {
+        width: 100%;
+        max-width: 100%;  /* Full width on mobile */
+        padding: 20px;
     }
-  
+
     h1 {
-      font-size: 1.8rem; 
+        font-size: 2rem;  /* Adjust h1 font size for mobile */
     }
-  
+
     .neon-btn {
-      padding: 10px 20px;
-      font-size: 1rem;
+        padding: 8px 16px;  /* Smaller buttons on mobile */
+        font-size: 0.9rem;
     }
-  
-    .input-group input, 
-    .log-section input, 
-    .reminder-section input {
-      padding: 10px; 
-      font-size: 0.9rem; 
+
+    .input-group input {
+        width: 100%;  /* Inputs take full width on mobile */
+        padding: 8px;
+        font-size: 0.9rem;
     }
-  
-    .goal-section h3, 
-    .progress-section h3, 
-    .log-section h3, 
+
+    .goal-section h3,
+    .progress-section h3,
+    .log-section h3,
     .reminder-section h3 {
-      font-size: 1rem; 
+        font-size: 1rem;
     }
-  
+
     .goal-text {
-      font-size: 1.2rem; 
+        font-size: 1.2rem;
     }
-  
+
     .neon-progress-bar {
-      height: 15px; 
+        height: 15px;
     }
-  
+
     #progress-text {
-      font-size: 0.9rem; 
+        font-size: 0.9rem;
     }
-  }
+
+    .glass-card {
+        padding: 15px;  /* Reduced padding for better fit */
+    }
+
+    header {
+        margin-bottom: 20px;  /* Reduced margin for better fit on mobile */
+    }
+}
+
+/* Extra small devices (portrait phones, less than 480px) */
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .neon-container {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .goal-text {
+        font-size: 1rem;
+    }
+
+    .neon-progress-bar {
+        height: 12px;
+    }
+
+    .neon-btn {
+        font-size: 0.8rem;
+        padding: 7px 14px;
+    }
+
+    .input-group input {
+        padding: 6px;
+    }
+
+    .glass-card {
+        padding: 10px;  /* Further reduced padding */
+    }
+}
