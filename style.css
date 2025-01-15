@@ -224,3 +224,8 @@
         padding: 10px;  /* Further reduced padding */
     }
 }
+ @media (max-width: 480px) {
+    h1 {
+        font-size: 1rem; 
+    }
+}
